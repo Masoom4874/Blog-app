@@ -1,15 +1,15 @@
-//this is a stateless functional component
-const Navbar = () => {
-    return ( 
-        <nav className="navbar">
-            <h1>The dojo Blog</h1>
-            <div className="links">
-                <a href="/">Home</a>
-                <a href="/create" >New blog</a>
+import { Link } from "react-router-dom";
 
-            </div>
-        </nav>
-     );
-}
- 
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <h1>The Blog website</h1>
+      <div className="links">
+        <Link to="/">Home</Link>
+        <Link to="/create">New blog</Link>
+      </div>
+    </nav>
+  );
+};
+
 export default Navbar;
